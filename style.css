@@ -1,0 +1,669 @@
+* {
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+}
+
+
+
+/* Intro Section */
+#intro {
+    background-color: #F8F8F8;
+}
+
+.myself h1, h2 {
+    color: #2A3D66;
+}
+
+.works-btn, .resume-btn {
+    padding: 2% 7%;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.works-btn {
+    border: 2px solid #3667A6;
+    background-color: #F8F8F8;
+    color: #3667A6;
+}
+
+.resume-btn {
+    background-color: #3667A6;
+    border: 2px solid #3667A6;
+    color: #F8F8F8;
+}
+
+.works-btn:hover {
+    background-color: #2A3D66;
+    border: 2px solid #2A3D66;
+    color: #F8F8F8;
+}
+
+.resume-btn:hover {
+    background-color: #F8F8F8;
+    border: 2px solid #2A3D66;
+    color: #2A3D66;
+}
+
+.works-btn:active, .resume-btn:active {
+    transform: translateY(2px);
+}
+
+
+/* About Me Section */
+#about-me {
+    background-color: #2A3D66;
+    color: #F8F8F8;
+}
+
+
+/* Work Experience Section */
+#work-experience {
+    background-color: #3667A6;
+    color: #F8F8F8;
+}
+
+.work-details {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid #BDBDBD;
+}
+
+
+/* My Sills Section */
+#my-skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2A3D66;
+    color: #F8F8F8;
+}
+
+.skill-sets {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+}
+
+.single-skill-set {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4%;
+}
+
+.outer-skill-bar {
+    flex-grow: 1;
+    height: 20px;
+    border-radius: 5px;
+    background-color: #F8F8F8;
+}
+
+.reactjs, .html, .css, .javascript, .bootstrap, .material-ui, .api, .nodejs, .mongodb, .git {
+    height: 20px;
+    border-radius: 5px;
+    background-color: #3667A6;
+}
+
+
+/* My Projects Section */
+#my-projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8F8F8;
+    color: #2A3D66;
+}
+
+.projects-grid {
+    display: grid;
+    margin-top: 2%;
+}
+
+.projects-grid a:link {
+    text-decoration: none;
+}
+
+.projects-grid a:visited {
+    color: #2A3D66;
+}
+
+.single-project {
+    cursor: pointer;
+}
+
+.single-project:hover {
+    transform: translateY(10px);
+}
+
+.project-name, .project-description {
+    margin-top: 2%;
+}
+
+
+/* Contact Form Section */
+#contact-me {
+    background-color: #3667A6;
+    color: #F8F8F8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reach-me-text {
+    margin: 2% 0 3% 0;
+}
+
+.contact-me-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-input, .email-input, .message-text-area {
+    background-color: #3667A6;
+    color: #F8F8F8;
+    border: 1px solid #F8F8F8;
+    border-radius: 5px;
+    padding: 8%;
+    margin: 4% 0;
+}
+
+.message-text-area {
+    resize: none;
+    overflow-y: auto;
+}
+
+.submit-btn {
+    background-color: #F8F8F8;
+    color: #3667A6;
+    border: 3px solid #F8F8F8;
+    padding: 8%;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.submit-btn:hover {
+    background-color: #3667A6;
+    color: #2A3D66;
+    border: 3px solid #2A3D66;
+    cursor: pointer;
+}
+
+.submit-btn:active {
+    transform: translateY(2px);
+}
+
+::placeholder {
+    color: #F8F8F8;
+    opacity: 0.3;
+}
+
+.name-input, .email-input, .message-text-area:focus {
+    outline: none;
+}
+
+
+/* Footer Section */
+#footer {
+    background-color: #2A3D66;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkedin, .github, .email {
+    color: #F8F8F8;
+    padding: 5px 10px;
+    border: 5px solid #2A3D66;
+    cursor: pointer;
+}
+
+.linkedin:hover {
+    color: #0E76A8;
+    border: 5px solid #0E76A8;
+}
+
+.github:hover {
+    color: #000;
+    border: 5px solid #000;
+}
+
+.email:hover {
+    color: #f54f43;
+    border: 5px solid #f54f43;
+}
+
+
+
+
+/* Mobile View */
+
+@media only screen and (max-width: 1050px) {
+    /* Intro Section */
+    #intro {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: -1%;
+    }
+
+    .myself {
+        display: flex;
+        flex-direction: column;
+        margin: 10% 4%;
+    }
+
+    .myself h1 {
+        font-size: 36px;
+    }
+
+    .myself h2 {
+        font-size: 20px;
+        margin: 2% 0 5% 0;
+    }
+
+    .nav-bar-buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .works-btn {
+        margin-bottom: 2%;
+    }
+
+    .works-btn, .resume-btn {
+        width: 100%;
+    }
+
+    .my-img {
+        width: 100%;
+    }
+    
+    /* About Me Section */
+    #about-me {
+        display: flex;
+        flex-direction: column;
+        padding: 15% 4%;
+    }
+
+    .who-am-i {
+        font-size: 24px;
+    }
+
+    .more-about-me {
+        font-size: 12px;
+        margin-top: 8%;
+    }
+
+
+    /* Work Experience Section */
+    #work-experience {
+        display: flex;
+        flex-direction: column;
+        padding: 15% 4%;
+    }
+
+    .work-exp-text {
+        font-size: 24px;
+        margin-bottom: 10%;
+    }
+
+    .work-title {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 1%;
+    }
+
+    .company-title {
+        font-size: 16px;
+        margin-bottom: 1%;
+    }
+
+    .work-time {
+        font-size: 14px;
+    }
+
+    .work-description {
+        font-size: 12px;
+        margin: 5% 0 8% 0;
+    }
+
+
+    /* My Sills Section */
+    #my-skills {
+        padding: 15% 4%;
+    }
+
+    .skill-sets {
+        width: 100%;
+    }
+
+    .skill-text {
+        width: 25%;
+    }
+
+    .skills-text {
+        font-size: 24px;
+    }
+
+    .skill-text, .skill-percentage-text {
+        font-size: 12px;
+    }
+
+    .outer-skill-bar {
+        margin-right: 3%;
+    }
+
+    .reactjs, .material-ui {
+        width: 195.5px;
+    }
+
+    .html, .css {
+        width: 218.5px;
+    }
+
+    .javascript, .bootstrap {
+        width: 207px;
+    }
+
+    .nodejs {
+        width: 172.5px;
+    }
+
+    .mongodb {
+        width: 161px;
+    }
+
+    .api {
+        width: 149.5px;
+    }
+
+    .git {
+        width: 184px;
+    }
+
+
+    /* My Projects Section */
+    #my-projects {
+        padding: 15% 4%;
+    }
+
+    .projects-text {
+        font-size: 24px;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .single-project {
+        margin-top: 5%;
+        width: 345px;
+    }
+
+    .project-img {
+        width: 345px;
+    }
+
+    .project-name {
+        font-size: 16px;
+    }
+
+    .project-description {
+        font-size: 12px;
+    }
+
+
+    /* Contact Form Section */
+    #contact-me {
+        padding: 15% 0;
+    }
+
+    .contact-me-title {
+        font-size: 24px;
+    }
+
+    .reach-me-text {
+        font-size: 10px;
+    }
+
+    .name-input, .email-input, .message-text-area {
+        font-size: 12px;
+        width: 200%;
+    }
+
+    .submit-btn {
+        margin-top: 5%;
+        font-size: 14px;
+        width: 210%;
+    }
+
+
+    /* Footer Section */
+    #footer {
+        padding: 25% 0 15% 0;
+    }
+
+    .linkedin, .github, .email {
+        font-size: 20px;
+    }
+
+    .github {
+        margin: 0 3%;
+    }
+}
+
+
+
+
+/* Desktop View */
+
+@media only screen and (min-width: 1051px) {
+    /* Intro Section */
+    #intro {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: -0.2%;
+    }
+
+    .myself {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        margin: 0 17%;
+    }
+
+    .myself h1 {
+        font-size: 72px;
+    }
+
+    .myself h2 {
+        font-size: 32px;
+        margin: 5% 0 10% 0;
+    }
+
+    .works-btn {
+        margin-right: 5%;
+    }
+
+    .my-img {
+        height: 80vh;
+    }
+
+
+    /* About Me Section */
+    #about-me {
+        display: flex;
+        flex-direction: row;
+        padding: 5% 5% 5% 17%;
+    }
+
+    .who-am-i {
+        font-size: 36px;
+        width: 180vw;
+    }
+
+    .my-info {
+        flex-direction: column;
+        margin-left: 12%;
+    }
+
+    .more-about-me {
+        font-size: 16px;
+        margin-left: 12%;
+    }
+
+
+    /* Work Experience Section */
+    #work-experience {
+        display: flex;
+        flex-direction: row;
+        padding: 5% 5% 5% 17%;
+    }
+
+    .work-exp-text {
+        font-size: 48px;
+        width: 107vw;
+    }
+
+    .work-title {
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .company-title {
+        font-size: 24px;
+    }
+
+    .work-time {
+        font-size: 18px;
+    }
+
+    .work-description {
+        font-size: 16px;
+        margin: 5% 0 8% 0;
+    }
+
+
+    /* My Sills Section */
+    #my-skills {
+        padding: 5% 0;
+    }
+
+    .skills-text {
+        font-size: 48px;
+    }
+
+    .skill-text {
+        font-size: 24px;
+        width: 30%;
+    }
+
+    .outer-skill-bar {
+        width: 500px;
+        margin: 0 2% 0 5%;
+    }
+
+    .reactjs, .material-ui {
+        width: 340px;
+    }
+
+    .html, .css {
+        width: 390px;
+    }
+
+    .javascript, .bootstrap {
+        width: 365px;
+    }
+
+    .nodejs {
+        width: 290px;
+    }
+
+    .mongodb {
+        width: 265px;
+    }
+
+    .api {
+        width: 240px;
+    }
+
+    .git {
+        width: 315px;
+    }
+
+
+    /* My Projects Section */
+    #my-projects {
+        padding: 5%;
+    }
+
+    .projects-text {
+        font-size: 48px;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        width: 82%;
+    }
+
+    .single-project {
+        width: 500px;
+        margin: 5%;
+    }
+
+    .project-name {
+        font-size: 36px;
+    }
+
+    .project-description {
+        font-size: 16px;
+    }
+
+
+    /* Contact Form Section */
+    #contact-me {
+        padding: 5% 0;
+    }
+
+    .contact-me-title {
+        font-size: 48px;
+    }
+
+    .reach-me-text {
+        font-size: 16px;
+    }
+
+    .name-input, .email-input, .message-text-area {
+        font-size: 16px;
+        width: 250%;
+    }
+
+    .submit-btn {
+        margin-top: 8%;
+        font-size: 18px;
+        width: 260%;
+    }
+
+
+    /* Footer Section */
+    #footer {
+        padding: 8% 0 3% 0;
+    }
+
+    .linkedin, .github, .email {
+        font-size: 30px;
+    }
+
+    .github {
+        margin: 0 2%;
+    }
+}
