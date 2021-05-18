@@ -1,2 +1,2 @@
 # My-Portfolio-Website
-A simple portfolio (resume) website developer using core HTML and CSS.
+A simple portfolio (resume) website developed using core HTML and CSS.
